@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunningWebAssemblyInBrowser", "RunningWebAssemblyInBrowser\RunningWebAssemblyInBrowser.csproj", "{64B3A11C-D64F-4ADC-B194-06983D6A31DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunningWebAssemblyInBrowser", "RunningWebAssemblyInBrowser\RunningWebAssemblyInBrowser.csproj", "{64B3A11C-D64F-4ADC-B194-06983D6A31DB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A8298E09-A1E4-4B90-AA5B-4B8A83673421}"
 	ProjectSection(SolutionItems) = preProject
@@ -13,6 +13,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{CE605186-BFB3-4E48-B107-8605ADA71220}"
 	ProjectSection(SolutionItems) = preProject
 		images\WASM.png = images\WASM.png
+		images\{1E20DD17-D1C6-41FE-B1DF-E8A81ED29B85}.png = images\{1E20DD17-D1C6-41FE-B1DF-E8A81ED29B85}.png
+		images\{221578ED-A39F-4AB2-8076-B5FDBAD05801}.png = images\{221578ED-A39F-4AB2-8076-B5FDBAD05801}.png
+		images\{38ADEA4F-AEC0-4926-9551-4E1C1449975F}.png = images\{38ADEA4F-AEC0-4926-9551-4E1C1449975F}.png
+		images\{43699453-FE18-4883-91A6-E69481D923D5}.png = images\{43699453-FE18-4883-91A6-E69481D923D5}.png
+		images\{64B55AB6-B692-41D0-99F4-73C5B9F50B24}.png = images\{64B55AB6-B692-41D0-99F4-73C5B9F50B24}.png
+		images\{BE6E0F70-8B8A-4661-8B3E-22EE5A64B1C7}.png = images\{BE6E0F70-8B8A-4661-8B3E-22EE5A64B1C7}.png
+		images\{ECD7614E-AAD7-4647-9206-FD18430367D2}.png = images\{ECD7614E-AAD7-4647-9206-FD18430367D2}.png
 	EndProjectSection
 EndProject
 Global
