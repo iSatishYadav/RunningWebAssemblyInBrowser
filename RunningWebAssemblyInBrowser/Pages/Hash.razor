@@ -1,0 +1,34 @@
+﻿@page "/hash"
+<h1>Hash</h1>
+<p>Get SHA265 Hash via WebAssembly</p>
+<EditForm Model="@hashInput" OnSubmit="@CalculateHash">
+    <div class="form-group">
+        <InputText @bind-Value="hashInput" class="form-control" id="textInput" aria-describedby="emailHelp" placeholder="Enter text to calculate Hash" />
+        <small id="hashHelp" class="form-text text-muted">@hashOutput</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</EditForm>
+
+@code {
+    private string hashInput = string.Empty;
+    private string hashOutput;
+    void CalculateHash()
+    {
+        hashOutput = GetSha256Hash(hashInput);
+    }
+    private static string GetSha256Hash(string plainText)
+    {
+        // Create a SHA256 hash from string   
+        using var sha256Hash = System.Security.Cryptography.SHA256.Create();
+        // Computing Hash - returns here byte array
+        byte[] bytes = sha256Hash.ComputeHash(System.Text.Encoding.UTF8.GetBytes(plainText));
+
+        // now convert byte array to a string   
+        var stringbuilder = new System.Text.StringBuilder();
+        for (int i = 0; i < bytes.Length; i++)
+        {
+            stringbuilder.Append(bytes[i].ToString("x2"));
+        }
+        return stringbuilder.ToString();
+    }
+}
